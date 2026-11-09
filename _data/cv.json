@@ -1,152 +1,189 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Daniel Gloris",
+    "label": "Research Associate & PhD Candidate",
+    "email": "daniel.gloris@tu-dortmund.de",
+    "phone": "(+49) 231 755-3104",
+    "website": "https://danielgloris.github.io",
+    "summary": "Research Associate and PhD Candidate at TU Dortmund University. Research on political attitudes and behaviour, political and social tolerance, and polarisation.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "address": "Emil-Figge-Str. 50",
+      "postalCode": "44227",
+      "city": "Dortmund",
+      "countryCode": "DE"
     },
     "profiles": [
       {
+        "network": "University profile",
+        "url": "https://ipp.ht.tu-dortmund.de/institut/personen/wissenschaftliche-mitarbeiterinnen-und-mitarbeiter/daniel-gloris-ma/"
+      },
+      {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.de/citations?hl=de&user=6rN2R-oAAAAJ"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0000-0001-9286-3273"
       },
       {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "network": "OSF",
+        "url": "https://osf.io/75pga/"
+      },
+      {
+        "network": "ResearchGate",
+        "url": "https://www.researchgate.net/profile/Daniel_G_Gloris"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "University of Oxford",
+      "position": "Visiting Academic Researcher",
+      "period": "April–June 2026",
+      "summary": "Department of Politics and International Relations, United Kingdom. Host: Prof. James Tilley."
+    },
+    {
+      "name": "TU Dortmund University",
+      "position": "Research Associate & PhD Candidate",
+      "period": "September 2019–present",
+      "summary": "Chair of Political Science (Prof. Dr. Christoph Schuck), Department of Philosophy and Political Science"
+    },
+    {
+      "name": "Ruhr University Bochum & TU Dortmund University",
+      "position": "Member, Graduate School on Political Cohesion",
+      "period": "May 2020–November 2023",
+      "summary": "Funded by the Mercator Research Center Ruhr. Elected student representative for a one-year term."
+    },
+    {
+      "position": "Freelance Student Research Assistant",
+      "period": "November 2016–January 2019",
+      "summary": "Assisted Prof. Emeritus Peter Schmidt, Professor Emeritus of Empirical Social Research at Justus Liebig University Giessen."
+    },
+    {
+      "name": "Philipps University Marburg",
+      "position": "Student Assistant, Political Science Methods and Empirical Democracy Research",
+      "period": "Winter 2015/16 & 2016/17",
+      "summary": "Dr. Aribert Heyder"
+    },
+    {
+      "name": "Philipps University Marburg",
+      "position": "Student Assistant, History of Philosophy",
+      "period": "Summer 2016",
+      "summary": "Prof. Dr. Winfried Schröder"
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "TU Dortmund University, Germany",
+      "area": "PhD in Political Science (in progress)",
+      "period": "Expected completion in 2027",
+      "dissertation": "On the relationship between political tolerance, attitudes towards climate change, perceived threats and environmental behaviour – A theory-driven empirical study",
+      "supervisor": "Prof. Dr. Christoph Schuck"
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "institution": "Philipps University Marburg, Germany",
+      "area": "MA in Political Science",
+      "period": "July 2019"
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "Philipps University Marburg, Germany",
+      "area": "MA in Philosophy",
+      "period": "July 2019"
+    },
+    {
+      "institution": "Philipps University Marburg, Germany",
+      "area": "BA in Political Science",
+      "period": "March 2015"
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "interests": [
+    {
+      "name": "Political psychology"
+    },
+    {
+      "name": "Political attitudes and behaviour"
+    },
+    {
+      "name": "Political and social tolerance"
+    },
+    {
+      "name": "Climate change attitudes"
+    },
+    {
+      "name": "Political polarisation"
+    },
+    {
+      "name": "Political philosophy"
+    },
+    {
+      "name": "Quantitative research methods"
+    },
+    {
+      "name": "Survey research"
+    },
+    {
+      "name": "Survey experiments"
+    },
+    {
+      "name": "Structural equation modelling (SEM)"
+    },
+    {
+      "name": "Qualitative comparative analysis (QCA)"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Research software and writing",
+      "keywords": [
+        "R",
+        "SPSS",
+        "AMOS",
+        "LaTeX"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Panel Conditioning or SOCRATIC EFFECT REVISITED: 99 Citations, but Is There Theoretical Progress?",
+      "publisher": "In Anja Mays et al. (eds.), Grundlagen – Methoden – Anwendungen in den Sozialwissenschaften. Festschrift für Steffen M. Kühnel. Wiesbaden: Springer, pp. 25–65.",
+      "authors": "Peter Schmidt, Marie-Therese Friehs, Daniel Gloris & Hannah Grote",
+      "year": 2020,
+      "type": "Book chapter",
+      "website": "https://doi.org/10.1007/978-3-658-15629-9_2"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Wann wirken Kontakte zwischen Migranten und Mehrheitsgesellschaft? Längsschnittanalysen zu Erfahrungen mit Kontakten und zur Bewertung von Flüchtlingen und Muslimen durch die deutsche Bevölkerung.",
+      "publisher": "In Aylin Heller, Oliver Decker, and Elmar Brähler (eds.), Prekärer Zusammenhalt – Die Bedrohung des demokratischen Miteinanders in Deutschland. Gießen: Psychosozial-Verlag, pp. 207–220.",
+      "authors": "Peter Schmidt, Stefan Weick & Daniel Gloris",
+      "year": 2020,
+      "type": "Reprinted book chapter",
+      "note": "Reprint of the 2019 article listed below."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Wann wirken Kontakte zwischen Migranten und Mehrheitsgesellschaft? Längsschnittanalysen zu Erfahrungen mit Kontakten und zur Bewertung von Flüchtlingen und Muslimen durch die deutsche Bevölkerung.",
+      "publisher": "Informationsdienst Soziale Indikatoren, 61, pp. 24–29.",
+      "authors": "Peter Schmidt, Stefan Weick & Daniel Georg Gloris",
+      "year": 2019,
+      "type": "Journal article",
+      "website": "https://doi.org/10.15464/isi.61.2019.24-29"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "name": "What Drives Threat, Attitudes towards Migrants and Identification with Populist Parties? Deprivation, Values or Racism? A Comparative Analysis of Poland and Germany.",
+      "publisher": "In F. Sztabiński, H. Domański, and P. B. Sztabiński (eds.), New Uncertainties and Anxieties in Europe – Seven Waves of the European Social Survey. Berlin: Peter Lang, pp. 35–93.",
+      "authors": "Peter Schmidt, Lucyna Darowska & Daniel Georg Gloris",
+      "year": 2018,
+      "type": "Book chapter",
+      "website": "https://doi.org/10.3726/b13526"
     }
   ]
 }

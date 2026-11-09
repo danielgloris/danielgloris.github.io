@@ -5,8 +5,7 @@ _site/
 # Ignore the directory for local files during development
 local/
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
+# The dependency lockfile is retained for reproducible local builds.
 
 # Ignore files created by npm
 node_modules
@@ -21,3 +20,6 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Local Jekyll cache
+.jekyll-cache/

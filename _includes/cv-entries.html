@@ -1,0 +1,14 @@
+<dl class="cv-entries">
+  {% for entry in include.entries %}
+  <div class="cv-entry">
+    <dt>{{ entry.period }}</dt>
+    <dd>
+      <h3>{{ entry.title }}</h3>
+      {% if entry.institution %}<p class="entry-institution">{{ entry.institution }}</p>{% endif %}
+      {% if entry.dissertation %}<p class="item-note">Dissertation: <cite>{{ entry.dissertation | escape }}</cite></p>{% endif %}
+      {% if entry.supervisor %}<p class="item-note">Supervisor: {{ entry.supervisor | escape }}</p>{% endif %}
+      {% if entry.detail %}<p class="item-note">{{ entry.detail }}</p>{% endif %}
+    </dd>
+  </div>
+  {% endfor %}
+</dl>

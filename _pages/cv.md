@@ -1,64 +1,47 @@
 ---
-layout: archive
-title: "CV"
+layout: academic
+title: Curriculum Vitae
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+description: "Academic positions, education, service, funding, and methods training of Daniel Gloris, Research Associate and PhD Candidate at TU Dortmund University."
 ---
+# Curriculum Vitae
 
-{% include base_path %}
+[Download the full CV (PDF)]({{ site.data.profile.cv | relative_url }})
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Academic positions
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+{% include cv-entries.html entries=site.data.profile.positions %}
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Education
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+{% include cv-entries.html entries=site.data.profile.education %}
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Memberships and academic service
+
+{% for membership in site.data.profile.memberships %}- {{ membership }}
+{% endfor %}- Reviewer for Nomos
+
+## Funding
+
+Funding for a visit by Prof. James L. Gibson through the TU.hosts programme, Graduate Center, TU Dortmund University. April 2025, €3,986.
+
+## Workshop organisation
+
+{% for workshop in site.data.profile.workshop_organisation %}
+### {{ workshop.title }}
+
+{{ workshop.period }}. {{ workshop.detail }}
+
+{% endfor %}
+## Skills
+
+- Research software and writing: R, SPSS, AMOS, LaTeX
+- Languages: German (native), English (fluent)
+
+## Methods workshops and professional development
+
+{% include cv-entries.html entries=site.data.profile.workshops %}
+
+## Publications, talks, and teaching
+
+See the [publications]({{ '/publications/' | relative_url }}), [talks]({{ '/talks/' | relative_url }}), and [teaching]({{ '/teaching/' | relative_url }}) pages, or [download the complete CV]({{ site.data.profile.cv | relative_url }}).

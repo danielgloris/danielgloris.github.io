@@ -1,36 +1,25 @@
 ---
-layout: archive
-title: "Publications"
+layout: academic
+title: Publications
 permalink: /publications/
-author_profile: true
+description: "Publications and submitted manuscripts by Daniel Gloris on political tolerance, climate change, intergroup contact, and social science methodology."
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+<h1>Publications</h1>
+<p>Publication titles are listed in their original language. You can also find my work on <a href="{{ site.data.profile.profiles[1].url | escape }}">Google Scholar</a>.</p>
+<section aria-labelledby="published-work">
+  <h2 id="published-work">Published work</h2>
+  {% include publication-list.html %}
+</section>
+<section aria-labelledby="submitted-manuscripts">
+  <h2 id="submitted-manuscripts">Submitted manuscripts</h2>
+  <ol class="publication-list">
+    {% for manuscript in site.data.manuscripts %}
+    <li class="publication">
+      <div class="publication-meta">{{ manuscript.year }}</div>
+      <h3>{{ manuscript.title | escape }}</h3>
+      <p class="publication-authors">{{ manuscript.authors | escape }}</p>
+      <p class="publication-venue">{{ manuscript.status }} <cite>{{ manuscript.journal | escape }}</cite>.</p>
+    </li>
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+  </ol>
+</section>

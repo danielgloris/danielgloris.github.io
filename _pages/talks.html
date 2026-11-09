@@ -1,16 +1,12 @@
 ---
-layout: archive
-title: "Talks and presentations"
+layout: academic
+title: Talks
 permalink: /talks/
-author_profile: true
+description: "Conference presentations and invited talks by Daniel Gloris on political tolerance, climate change, and political behaviour."
 ---
-
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<h1>Talks</h1>
+<section id="presentations" aria-labelledby="presentations-title">
+<h2 id="presentations-title">Conference presentations</h2>
+<ol class="talk-list">{% for talk in site.data.talks.conferences %}<li class="talk"><p class="talk-date">{{ talk.date }}</p>{% if talk.status %}<p class="item-status">{{ talk.status }}</p>{% endif %}<h3>{{ talk.title }}</h3><p>{{ talk.venue }}</p><p class="item-note">{{ talk.location }}</p></li>{% endfor %}</ol>
+</section>
+<section aria-labelledby="invited-title"><h2 id="invited-title">Invited and other talks</h2><ol class="talk-list">{% for talk in site.data.talks.invited %}<li class="talk"><p class="talk-date">{{ talk.date }}</p><h3>{{ talk.title }}</h3><p>{{ talk.venue }}</p><p class="item-note">{{ talk.location }}</p></li>{% endfor %}</ol></section>

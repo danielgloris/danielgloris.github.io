@@ -1,0 +1,17 @@
+<ul class="author-links">
+  <li class="profile-location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Dortmund, Germany</span></li>
+  <li><a href="mailto:{{ site.data.profile.email }}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7"/></svg>Email</a></li>
+  {% for profile in site.data.profile.profiles %}
+  <li><a href="{{ profile.url | escape }}">
+    {% case profile.label %}
+    {% when 'University profile' %}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 8 10-6 10 6H2Zm2 12h16M5 8v12M10 8v12M14 8v12M19 8v12"/></svg>
+    {% when 'Google Scholar' %}<i class="ai ai-google-scholar" aria-hidden="true"></i>
+    {% when 'ORCID' %}<i class="ai ai-orcid" aria-hidden="true"></i>
+    {% when 'OSF' %}<i class="ai ai-osf" aria-hidden="true"></i>
+    {% when 'ResearchGate' %}<i class="ai ai-researchgate" aria-hidden="true"></i>
+    {% endcase %}
+    {{ profile.label }}</a></li>
+  {% endfor %}
+  <li><a href="{{ site.data.profile.cv | relative_url }}"><i class="ai ai-cv" aria-hidden="true"></i>Download CV</a></li>
+  <li><a href="{{ '/contact/' | relative_url }}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="9" r="3"/><path d="M6 20v-3a6 6 0 0 1 12 0v3"/></svg>Contact details</a></li>
+</ul>

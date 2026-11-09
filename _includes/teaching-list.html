@@ -1,0 +1,6 @@
+{% for theme in include.themes %}
+<section aria-labelledby="{{ theme.id }}">
+  <h2 id="{{ theme.id }}">{{ theme.title | escape }}</h2>
+  <p>{{ theme.summary | escape }}</p>
+</section>
+{% endfor %}

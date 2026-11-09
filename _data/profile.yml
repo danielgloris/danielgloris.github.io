@@ -1,0 +1,115 @@
+name: Daniel Gloris
+role: Research Associate & PhD Candidate
+institution: TU Dortmund University
+department: Department of Philosophy and Political Science
+chair: Chair of Political Science
+supervisor: Prof. Dr. Christoph Schuck
+email: daniel.gloris@tu-dortmund.de
+address: Emil-Figge-Str. 50
+postcode: 44227
+city: Dortmund
+country: Germany
+phone: "(+49) 231 755-3104"
+cv: /files/CV_DanielGloris.pdf
+portrait: /images/daniel-gloris.jpg
+
+profiles:
+  - label: University profile
+    url: https://ipp.ht.tu-dortmund.de/institut/personen/wissenschaftliche-mitarbeiterinnen-und-mitarbeiter/daniel-gloris-ma/
+  - label: Google Scholar
+    url: https://scholar.google.de/citations?hl=de&user=6rN2R-oAAAAJ
+  - label: ORCID
+    url: https://orcid.org/0000-0001-9286-3273
+  - label: OSF
+    url: https://osf.io/75pga/
+  - label: ResearchGate
+    url: https://www.researchgate.net/profile/Daniel_G_Gloris
+
+interests:
+  - Political psychology
+  - political attitudes and behaviour
+  - political and social tolerance
+  - climate change attitudes
+  - political polarisation
+  - political philosophy
+
+methods:
+  - Quantitative research methods
+  - survey research
+  - survey experiments
+  - structural equation modelling (SEM)
+  - qualitative comparative analysis (QCA)
+
+positions:
+  - period: April–June 2026
+    title: Visiting Academic Researcher
+    institution: University of Oxford
+    detail: "Department of Politics and International Relations, United Kingdom. Host: Prof. James Tilley."
+  - period: September 2019–present
+    title: Research Associate & PhD Candidate
+    institution: TU Dortmund University
+    detail: "Chair of Political Science (Prof. Dr. Christoph Schuck), Department of Philosophy and Political Science"
+  - period: May 2020–November 2023
+    title: Member, Graduate School on Political Cohesion
+    institution: Ruhr University Bochum & TU Dortmund University
+    detail: Funded by the Mercator Research Center Ruhr. Elected student representative for a one-year term.
+  - period: November 2016–January 2019
+    title: Freelance Student Research Assistant
+    detail: "Assisted Prof. Emeritus Peter Schmidt, Professor Emeritus of Empirical Social Research at Justus Liebig University Giessen."
+  - period: Winter 2015/16 & 2016/17
+    title: Student Assistant, Political Science Methods and Empirical Democracy Research
+    institution: Philipps University Marburg
+    detail: Dr. Aribert Heyder
+  - period: Summer 2016
+    title: Student Assistant, History of Philosophy
+    institution: Philipps University Marburg
+    detail: Prof. Dr. Winfried Schröder
+
+education:
+  - period: Expected completion in 2027
+    level: phd
+    title: PhD in Political Science (in progress)
+    institution: TU Dortmund University, Germany
+    dissertation: "On the relationship between political tolerance, attitudes towards climate change, perceived threats and environmental behaviour – A theory-driven empirical study"
+    supervisor: Prof. Dr. Christoph Schuck
+  - period: July 2019
+    title: MA in Political Science
+    institution: Philipps University Marburg, Germany
+  - period: July 2019
+    title: MA in Philosophy
+    institution: Philipps University Marburg, Germany
+  - period: March 2015
+    title: BA in Political Science
+    institution: Philipps University Marburg, Germany
+
+memberships:
+  - Board Member, Research Committee 29 — Political Psychology, International Political Science Association (IPSA)
+  - Member, International Political Science Association (IPSA)
+
+workshops:
+  - period: February 2025
+    title: Advanced Qualitative Comparative Analysis (QCA)
+    institution: Konstanz Methods Excellence Workshops, University of Konstanz
+  - period: January 2025
+    title: Research Data Management (FDM) Badge
+    institution: University Alliance Ruhr — three courses in the joint research data management curriculum
+  - period: February 2024
+    title: Introduction to Python
+    institution: Konstanz Methods Excellence Workshops, University of Konstanz
+  - period: November 2022
+    title: Causal Mediation Analysis
+    institution: GESIS — Leibniz Institute for the Social Sciences
+  - period: April 2021
+    title: Process Tracing Methods
+    institution: Graduate School on Political Cohesion, Ruhr University Bochum & TU Dortmund University
+  - period: May 2021
+    title: "Quantitative Methods: Why Do East and West Germans Protest? An Analysis of Determinants with ALLBUS 2018 Data"
+    institution: Graduate School on Political Cohesion, Ruhr University Bochum & TU Dortmund University
+
+workshop_organisation:
+  - period: April & May 2021
+    title: Qualitative and Quantitative Methods
+    detail: Graduate School on Political Cohesion; virtual workshop, co-organised with Daniel Beck and Melis Baydag.
+  - period: November 2020
+    title: Political Cohesion and Societal Division
+    detail: Graduate School on Political Cohesion; virtual workshop, co-organised with Daniel Beck and Melis Baydag.

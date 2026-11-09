@@ -1,0 +1,27 @@
+- year: 2020
+  type: Book chapter
+  authors: Peter Schmidt, Marie-Therese Friehs, Daniel Gloris & Hannah Grote
+  title: "Panel Conditioning or SOCRATIC EFFECT REVISITED: 99 Citations, but Is There Theoretical Progress?"
+  venue: "In Anja Mays et al. (eds.), Grundlagen – Methoden – Anwendungen in den Sozialwissenschaften. Festschrift für Steffen M. Kühnel. Wiesbaden: Springer, pp. 25–65."
+  doi: https://doi.org/10.1007/978-3-658-15629-9_2
+  selected: true
+- year: 2020
+  type: Reprinted book chapter
+  authors: Peter Schmidt, Stefan Weick & Daniel Gloris
+  title: "Wann wirken Kontakte zwischen Migranten und Mehrheitsgesellschaft? Längsschnittanalysen zu Erfahrungen mit Kontakten und zur Bewertung von Flüchtlingen und Muslimen durch die deutsche Bevölkerung."
+  venue: "In Aylin Heller, Oliver Decker, and Elmar Brähler (eds.), Prekärer Zusammenhalt – Die Bedrohung des demokratischen Miteinanders in Deutschland. Gießen: Psychosozial-Verlag, pp. 207–220."
+  note: Reprint of the 2019 article listed below.
+- year: 2019
+  type: Journal article
+  authors: Peter Schmidt, Stefan Weick & Daniel Georg Gloris
+  title: "Wann wirken Kontakte zwischen Migranten und Mehrheitsgesellschaft? Längsschnittanalysen zu Erfahrungen mit Kontakten und zur Bewertung von Flüchtlingen und Muslimen durch die deutsche Bevölkerung."
+  venue: "Informationsdienst Soziale Indikatoren, 61, pp. 24–29."
+  doi: https://doi.org/10.15464/isi.61.2019.24-29
+  selected: true
+- year: 2018
+  type: Book chapter
+  authors: Peter Schmidt, Lucyna Darowska & Daniel Georg Gloris
+  title: "What Drives Threat, Attitudes towards Migrants and Identification with Populist Parties? Deprivation, Values or Racism? A Comparative Analysis of Poland and Germany."
+  venue: "In F. Sztabiński, H. Domański, and P. B. Sztabiński (eds.), New Uncertainties and Anxieties in Europe – Seven Waves of the European Social Survey. Berlin: Peter Lang, pp. 35–93."
+  doi: https://doi.org/10.3726/b13526
+  doi_label: Book DOI
