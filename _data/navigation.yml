@@ -3,6 +3,8 @@ main:
     url: /research/
   - title: Publications
     url: /publications/
+  - title: Replication materials
+    url: /replication/
   - title: Talks
     url: /talks/
   - title: Teaching

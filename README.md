@@ -1,61 +1,60 @@
-# Daniel Gloris — Academic Website
+# Website von Daniel Gloris
 
-An English academic website based on the supplied CV. The site uses Jekyll, local assets, and a layout closely following the original Academic Pages structure: a compact top navigation, author sidebar, and a single content column. It has not been published or pushed to GitHub.
+Die englische Website wird mit Jekyll aus den Dateien in diesem Repository gebaut.
 
-## Preview locally
+## Lokale Vorschau
 
-On this Mac, double-click `scripts/Website-Vorschau.command` in Finder. It opens the running preview in your default browser, or starts the local server and opens the browser automatically. When it starts the server, keep the Terminal window open; press Ctrl+C to stop it.
+Auf dem Mac im Finder `scripts/Website-Vorschau.command` doppelklicken. Die Startdatei öffnet [die lokale Vorschau](http://127.0.0.1:4000/) und startet den Server, falls er noch nicht läuft. Wenn dabei ein Terminalfenster mit dem Server erscheint, offen lassen. Mit Ctrl+C lässt sich der Server dort beenden.
 
-You can also open <http://127.0.0.1:4000> in Codex, Safari, Chrome, or Firefox while the server is running. Refresh the browser after changing the content. For a quick mobile layout check, make the browser window narrower.
+Alternativ im Projektordner `npm run dev` ausführen. Für eine neue lokale Installation mit Ruby und Bundler zuerst `ruby -S bundle install` ausführen. Mit `npm run build` wird die Website ohne laufenden Server gebaut. Diese Befehle veröffentlichen nichts.
 
-Alternatively, run `npm run dev` in the project folder. This uses the same local server. If it is already running, open the address above instead of starting a second server.
+Nach dem Speichern einer Datei die Browserseite neu laden. Nach Änderungen in `_config.yml` den Vorschau-Server neu starten.
 
-With Ruby 3.1 or newer and Bundler installed:
+## Inhalte bearbeiten
 
-```sh
-ruby -S bundle install
-ruby -S bundle exec jekyll serve --host 127.0.0.1 --port 4000
-```
-
-Open <http://127.0.0.1:4000>. This server is accessible only on your own computer. To generate the static files without starting a server:
-
-```sh
-ruby -S bundle exec jekyll build
-```
-
-The generated website is in `_site/`, which is ignored by Git. Neither command publishes the website. Do not push changes or trigger a deployment unless publication is explicitly authorised.
-
-## Edit the content
-
-| File | Content |
+| Was du ändern möchtest | Datei oder Ordner |
 | --- | --- |
-| `_data/profile.yml` | Academic positions, education, contact details, external profiles, workshops |
-| `_data/publications.yml` | Publications, citations, DOI links, selected work |
-| `_data/manuscripts.yml` | Submitted and under-review manuscripts |
-| `_data/talks.yml` | Conference presentations and invited talks |
-| `_data/teaching.yml` | Teaching themes and representative courses |
-| `_data/navigation.yml` | Main navigation |
-| `_pages/about.md` | Homepage and short biography |
-| `_pages/research.md` | Research interests |
-| `_pages/publications.html` | Publication list |
-| `_pages/talks.html` | Conference presentations and invited talks |
-| `_pages/teaching.html` | Teaching page |
-| `_pages/cv.md` | Web CV |
-| `_pages/contact.md` | Contact page |
-| `_layouts/academic.html` | Shared layout, author sidebar, navigation, metadata, footer |
-| `_includes/academic-profile-links.html` | Profile links and contact information in the sidebar |
-| `assets/css/academic.css` | Responsive design and print styling |
-| `images/daniel-gloris.jpg` | Portrait extracted from the supplied CV |
-| `files/CV_DanielGloris.pdf` | Unmodified copy of the supplied CV |
+| Startseite und Vorstellung | [`_pages/about.md`](_pages/about.md) |
+| Text der Forschungsseite | [`_pages/research.md`](_pages/research.md) |
+| Veröffentlichte Arbeiten | [`_data/publications.yml`](_data/publications.yml) |
+| Eingereichte Manuskripte | [`_data/manuscripts.yml`](_data/manuscripts.yml) |
+| Replikationsmaterial und Platzhalter während des Reviews | [`_data/replication.yml`](_data/replication.yml); Seitenaufbau in [`_pages/replication.html`](_pages/replication.html) |
+| Vorträge | [`_data/talks.yml`](_data/talks.yml) |
+| Thematische Übersicht der Lehre | [`_data/teaching.yml`](_data/teaching.yml) |
+| Name, Position, Universität, Forschungsinteressen, Kontaktdaten, Profil-Links und Stationen im CV | [`_data/profile.yml`](_data/profile.yml) |
+| Abschnittsaufbau des Web-CV | [`_pages/cv.md`](_pages/cv.md) |
+| Text und Aufbau der Kontaktseite | [`_pages/contact.md`](_pages/contact.md) |
+| Reihenfolge und Namen der Menüpunkte | [`_data/navigation.yml`](_data/navigation.yml) |
+| Porträt | [`images/daniel-gloris.jpg`](images/daniel-gloris.jpg) |
+| CV zum Download | [`files/CV_DanielGloris.pdf`](files/CV_DanielGloris.pdf) |
 
-The website contains no analytics, external fonts, JavaScript dependencies, or contact-form service. The PDF is the original full CV; replace it when the CV changes. The web biography and web CV omit personal birth details. Publication titles are retained in their original language. Teaching is grouped by topic; the PDF contains the full course list by semester. The 2020 reprinted chapter is identified as a reprint, and submitted manuscripts are listed separately from published work.
+In `_data` stehen die Angaben, die die Website automatisch in ihre Listen einsetzt. Für eine neue Veröffentlichung kannst du in `_data/publications.yml` einen vorhandenen Block kopieren und Titel, Jahr und DOI anpassen. Behalte dabei die Einrückung bei. Die Dateien `_pages/publications.html`, `_pages/talks.html` und `_pages/teaching.html` bestimmen, wie diese Listen auf den jeweiligen Seiten angezeigt werden.
 
-## Design references
+In `_data/profile.yml` erscheinen alle Einträge unter `positions` im Web-CV. Mit `homepage: true` zeigst du eine Position zusätzlich auf der Startseite an.
 
-The visual structure follows the original Academic Pages template, including its system sans-serif typography, compact headings, profile sidebar, and separate publications and talks pages. The academic content organisation was also informed by the personal websites of [Allison Harell](https://allisonharell.com/) and [Noam Gidron](https://noamgidron.com/): a short biography, research interests, publications, and direct academic contact links. All biographical and scholarly claims about Daniel Gloris come from the supplied CV.
+Sobald ein Replikationspaket verfügbar ist, ersetze `entries: []` in `_data/replication.yml` durch eine Liste wie diese. Der Platzhalter verschwindet, sobald ein Eintrag hinterlegt ist.
 
-## Upstream template
+```yaml
+entries:
+  - title: "Titel der Publikation"
+    repository: "OSF"
+    url: "Hier die vollständige Projekt- oder Datensatz-URL einsetzen"
+```
 
-This repository originated from [Academic Pages](https://github.com/academicpages/academicpages.github.io). Its unused layouts, examples, and tools are retained for reference. `_config.yml` excludes demonstration pages, posts, collections, PDFs, and assets from the build. The active website uses `_layouts/academic.html`; it uses the upstream Academicons locally and excludes all sample content. Its responsive profile and navigation disclosures work without JavaScript.
+Wenn du Porträt oder PDF ersetzt, behalte den Dateinamen bei oder passe den Eintrag `portrait` bzw. `cv` in `_data/profile.yml` an.
 
-The original MIT licence is retained in `LICENSE`.
+## Layout und Farben
+
+- [`_layouts/academic.html`](_layouts/academic.html) bestimmt den Aufbau aller Seiten: Kopfzeile, Navigation, Profilspalte, Inhaltsbereich und Fußzeile.
+- [`assets/css/academic.css`](assets/css/academic.css) bestimmt das Aussehen: Farben, Schrift, Abstände, Spaltenbreiten und mobile Darstellung.
+- Die Farben stehen ganz oben in `:root`. `--paper` ist der Seitenhintergrund, `--surface` die Farbe von Kopf- und Fußzeile, `--line` die Farbe der Trennlinien, `--accent` die allgemeine Linkfarbe und `--doi-link` das Blau der DOI-Links.
+- Die Bildgröße steht unter `.author-profile` bei `--portrait-size`. Kleinere Größen für schmale Fenster stehen in den `@media`-Abschnitten. Den Bildausschnitt bestimmt `object-position` unter `.author-avatar`.
+- In [`_includes/`](_includes/) liegen wiederverwendete Bausteine, etwa die Profil-Links und die Anzeige von Veröffentlichungen, Lehrthemen und CV-Einträgen.
+
+## Technische Dateien
+
+- [`_config.yml`](_config.yml) enthält den Website-Titel, die URL und die Build-Einstellungen.
+- `Gemfile` und `Gemfile.lock` halten die Ruby-Abhängigkeiten fest. `package.json` enthält die Befehle für Build und Vorschau. `assets/fonts` und `assets/css/academicons.min.css` werden für die Profil-Icons verwendet.
+- `_site` enthält die automatisch erzeugte Vorschau. Jekyll legt seinen Cache in `.jekyll-cache` ab; lokal installierte Ruby-Pakete können in `vendor` liegen. Diese Ordner werden nicht von Git verwaltet und sind nicht für manuelle Inhaltsänderungen gedacht.
+
+Das Projekt basiert auf [Academic Pages](https://github.com/academicpages/academicpages.github.io). Die ursprüngliche Lizenz steht in [`LICENSE`](LICENSE).

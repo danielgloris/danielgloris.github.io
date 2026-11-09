@@ -1,3 +1,4 @@
+{%- assign author = site.data.profile -%}
 <!doctype html>
 <html lang="en-GB">
   <head>
@@ -8,10 +9,10 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ page.title | escape }} · Daniel Gloris">
+    <meta property="og:title" content="{{ page.title | escape }} · {{ author.name | escape }}">
     <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:image" content="{{ site.data.profile.portrait | absolute_url }}">
+    <meta property="og:image" content="{{ author.portrait | absolute_url }}">
     <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
@@ -20,7 +21,7 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Daniel Gloris — home">Daniel Gloris</a>
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{{ author.name | escape }} — home">{{ author.name | escape }}</a>
         <nav class="site-nav" aria-label="Main navigation">
           {% for item in site.data.navigation.main %}
           <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="is-current" aria-current="page"{% endif %}>{{ item.title }}</a>
@@ -37,12 +38,12 @@
       </div>
     </header>
     <div class="shell site-layout">
-      <aside class="author-profile" aria-label="About Daniel Gloris">
-        <img class="author-avatar" src="{{ site.data.profile.portrait | relative_url }}" width="175" height="175" alt="Portrait of Daniel Gloris" fetchpriority="high">
+      <aside class="author-profile" aria-label="About {{ author.name | escape }}">
+        <img class="author-avatar" src="{{ author.portrait | relative_url }}" width="192" height="192" alt="Portrait of {{ author.name | escape }}" fetchpriority="high">
         <div class="author-bio">
-          <h2>Daniel Gloris</h2>
-          <p>Research Associate &amp; PhD Candidate</p>
-          <p>TU Dortmund University</p>
+          <h2>{{ author.name | escape }}</h2>
+          <p>{{ author.role | escape }}</p>
+          <p>{{ author.institution | escape }}</p>
         </div>
         <div class="profile-desktop">{% include academic-profile-links.html %}</div>
         <details class="profile-mobile"><summary>Contact &amp; profiles</summary>{% include academic-profile-links.html %}</details>
@@ -53,8 +54,8 @@
     </div>
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <div><p>© {{ 'now' | date: '%Y' }} Daniel Gloris · TU Dortmund University</p></div>
-        <div class="footer-links"><a href="mailto:{{ site.data.profile.email }}">Email <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.cv | relative_url }}">CV <span class="file-label">PDF</span></a><a href="{{ '/contact/' | relative_url }}">Contact</a></div>
+        <div><p>© {{ 'now' | date: '%Y' }} {{ author.name | escape }} · {{ author.institution | escape }}</p></div>
+        <div class="footer-links"><a href="mailto:{{ author.email }}">Email <span aria-hidden="true">↗</span></a><a href="{{ author.cv | relative_url }}">CV <span class="file-label">PDF</span></a><a href="{{ '/contact/' | relative_url }}">Contact</a></div>
       </div>
     </footer>
   </body>

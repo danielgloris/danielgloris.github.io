@@ -15,11 +15,15 @@ My research draws on political psychology to study political attitudes and behav
 - **Substantive:** {{ site.data.profile.interests | join: ', ' }}.
 - **Methodological:** {{ site.data.profile.methods | join: ', ' }}.
 
-## Academic background
+## Academic positions
+
+{% assign homepage_positions = site.data.profile.positions | where: 'homepage', true %}
+{% for position in homepage_positions %}- **{{ position.title }}**{% if position.institution %}, {{ position.institution }}{% endif %} ({{ position.period }}).
+{% endfor %}
+
+## Education
 
 - **PhD in Political Science (in progress)**, TU Dortmund University (expected completion in 2027).
-- **Visiting Academic Researcher**, Department of Politics and International Relations, University of Oxford (April–June 2026; host: Prof. James Tilley).
-- **Member of the Graduate School on Political Cohesion**, Ruhr University Bochum and TU Dortmund University (May 2020–November 2023).
 - **MA in Political Science and MA in Philosophy**, Philipps University Marburg (2019).
 - **BA in Political Science**, Philipps University Marburg (2015).
 

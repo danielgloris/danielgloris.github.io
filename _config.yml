@@ -1,4 +1,4 @@
-# Daniel Gloris — academic website. No deployment has been run.
+# Daniel Gloris — Einstellungen der Website.
 locale: en-GB
 title: Daniel Gloris
 name: Daniel Gloris
@@ -16,79 +16,24 @@ plugins: []
 include:
   - _pages
 
-# Retain the upstream template in the repository, but never build its demonstration content.
+# Lokale Werkzeuge, Abhängigkeiten und Dokumentation nicht als Website ausgeben.
 exclude:
-  - .github
   - .bundle
-  - .sass-cache
   - .jekyll-cache
-  - .devcontainer
-  - _drafts
-  - _posts
-  - _publications
-  - _talks
-  - _teaching
-  - _portfolio
-  - _pages/archive-layout-with-content.md
-  - _pages/category-archive.html
-  - _pages/collection-archive.html
-  - _pages/cv-json.md
-  - _pages/markdown.md
-  - _pages/non-menu-page.md
-  - _pages/page-archive.html
-  - _pages/portfolio.html
-  - _pages/sitemap.md
-  - _pages/tag-archive.html
-  - _pages/talkmap.html
-  - _pages/terms.md
-  - _pages/year-archive.html
-  - assets/css/main.scss
-  - assets/css/academicons.css
-  - assets/css/collapse.css
-  - assets/js
-  - assets/webfonts
-  - images/500x300.png
-  - images/bio-photo.jpg
-  - images/bio-photo-2.jpg
-  - images/editing-talk.png
-  - images/profile.png
-  - images/themes
-  - images/apple-touch-icon-180x180.png
-  - images/favicon-32x32.png
-  - images/favicon-192x192.png
-  - images/favicon-512x512.png
-  - images/favicon.ico
-  - images/manifest.json
-  - files/bibtex1.bib
-  - files/paper1.pdf
-  - files/paper2.pdf
-  - files/paper3.pdf
-  - files/slides1.pdf
-  - files/slides2.pdf
-  - files/slides3.pdf
-  - markdown_generator
-  - talkmap
-  - talkmap.py
-  - talkmap.ipynb
-  - talkmap_out.ipynb
-  - scripts
-  - node_modules
-  - vendor
-  - local
-  - tmp
-  - output
   - Gemfile
   - Gemfile.lock
+  - LICENSE
+  - README.md
   - package.json
   - package-lock.json
-  - Dockerfile
-  - docker-compose.yaml
-  - _config_docker.yml
-  - README.md
-  - CONTRIBUTING.md
-  - LICENSE
+  - scripts
+  - local
+  - node_modules
+  - vendor
+  - tmp
+  - output
 
-# This layout is independent of the original Academic Pages theme.
+# Gemeinsames Seitenlayout aus _layouts/academic.html.
 defaults:
   - scope:
       path: ""

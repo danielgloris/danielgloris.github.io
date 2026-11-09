@@ -1,0 +1,19 @@
+---
+layout: academic
+title: Replication materials
+permalink: /replication/
+description: "Data, code, and documentation for reproducing Daniel Gloris’s research."
+---
+<h1>Replication materials</h1>
+{% if site.data.replication.entries.size > 0 %}
+<ul>
+  {% for entry in site.data.replication.entries %}
+  <li>
+    <strong>{{ entry.title | escape }}</strong><br>
+    <a href="{{ entry.url | escape }}">Replication materials on {{ entry.repository | escape }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>{{ site.data.replication.placeholder | escape }}</p>
+{% endif %}

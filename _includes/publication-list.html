@@ -4,11 +4,11 @@
   <li class="publication">
     <div class="publication-meta"><span>{{ publication.year }}</span><span>{{ publication.type }}</span></div>
     <div>
-      <h3>{% if publication.doi and publication.doi_label == nil %}<a href="{{ publication.doi }}">{{ publication.title | escape }} <span class="inline-arrow" aria-hidden="true">↗</span></a>{% else %}{{ publication.title | escape }}{% endif %}</h3>
+      <h3>{{ publication.title | escape }}</h3>
       <p class="publication-authors">{{ publication.authors | replace: 'Daniel Georg Gloris', '<strong>Daniel Georg Gloris</strong>' | replace: 'Daniel Gloris', '<strong>Daniel Gloris</strong>' }}</p>
       <p class="publication-venue">{{ publication.venue }}</p>
       {% if publication.note %}<p class="item-note">{{ publication.note }}</p>{% endif %}
-      {% if publication.doi %}<a class="text-link doi-link" href="{{ publication.doi }}">{{ publication.doi_label | default: 'Read publication' }} <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.doi %}<a class="text-link doi-link" href="{{ publication.doi | escape }}">{{ publication.doi_label | default: 'DOI' | escape }}: {{ publication.doi | remove_first: 'https://doi.org/' | escape }} <span aria-hidden="true">↗</span></a>{% endif %}
     </div>
   </li>
   {% endif %}
